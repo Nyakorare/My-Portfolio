@@ -266,6 +266,11 @@ section .title::after{
     color: black;
     background: none;
 }
+.about .about-content .right a:active{
+    color: limegreen;
+    background: none;
+    cursor: progress;
+}
 #game{
     width: 150px;
     display: inline-block;
@@ -515,7 +520,7 @@ section .title::after{
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: crimson;
+    color: limegreen;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
@@ -573,14 +578,19 @@ font-size: 18px;
 font-weight: 500;
 border-radius: 6px;
 flex-wrap: nowrap;
-background: crimson;
-border: 2px solid crimson;
+background: limegreen;
+border: 2px solid black;
 transition: all 0.3s ease;
 }
 .right form .button-area button:hover{
-    color: crimson;
+    color: black;
     background: none;
     cursor: pointer;
+}
+.right form .button-area button:active{
+    color: white;
+    background: limegreen;
+    cursor: progress;
 }
 
 /* footer section styling */
