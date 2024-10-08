@@ -344,7 +344,7 @@ section .title::after{
 
 /* SKILLS */
 .skills .title::after{
-    content: "what i know";
+    content: "Tech Stack";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -577,12 +577,12 @@ background: crimson;
 border: 2px solid crimson;
 transition: all 0.3s ease;
 }
-/* TANGGAL MUNA
 .right form .button-area button:hover{
     color: crimson;
     background: none;
     cursor: pointer;
-}*/
+}
+
 /* footer section styling */
 footer{
     background: #111;
