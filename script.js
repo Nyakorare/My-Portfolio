@@ -81,7 +81,7 @@ function onClickButton() {
             <br><br>
             I'm an active Co-op guy who likes to goof around with friends in different types of games, more particularly on the genre of Horror, RPGs, and Survival.
             <br><br>
-            I also play Online Shooters (excluding Valorant), and I love to trash talk lots of people(even teammates) when it comes to these type of games.
+            I also play Online Shooters (mostly Valorant), and I love to trash talk lots of people(even teammates) when it comes to these type of games.
             `;
         document.getElementById("game").innerHTML = "Game Persona";
     } else {
