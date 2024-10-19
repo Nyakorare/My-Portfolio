@@ -163,7 +163,7 @@ section .title::after{
 /* HOME */
 .home{
     display: flex;
-    background: url("images/banner.jpg") no-repeat center;
+    background: url("images/banner.gif") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -732,5 +732,28 @@ footer span a:hover{
         width: 35px;
         font-size: 23px;
         line-height: 38px;
+    }
+}
+
+/* Enhanced fade-in and scale animation */
+.fade-in {
+    opacity: 0;
+    transform: scale(0.95); /* Start slightly smaller */
+    animation: fadeInScale ease-in-out 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.95); /* Slightly smaller */
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.02); /* Slightly larger in the middle */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1); /* Normal scale */
     }
 }
