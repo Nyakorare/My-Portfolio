@@ -407,7 +407,7 @@ section .title::after{
     height: 100%;
     left: 0;
     top: 0;
-    background: crimson;
+    background: limegreen;
 }
 .skills-content .right .lua::before{
     width: 80%;
@@ -424,8 +424,14 @@ section .title::after{
 .skills-content .right .js::before{
     width: 60%;
 }
+.skills-content .right .python::before{
+    width: 60%;
+}
 .skills-content .right .java::before{
     width: 25%;
+}
+.skills-content .right .R::before{
+    width: 20%;
 }
 
 /* PROJECTS */
