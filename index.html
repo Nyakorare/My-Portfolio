@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nyakorare Portfolio</title>
         <link rel = "icon" type = "image/png" href = "./images/favico.png">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
@@ -59,10 +59,10 @@
                 <h2 class="title">About me</h2>
                 <div class="about-content">
                     <div class="column left">
-                        <img src="images/profile-1.jpg" alt="ME" id="about-profile">
+                        <img src="./images/profile-1.jpg" alt="ME" id="about-profile">
                     </div>
                     <div class="column right">
-                        <div class="text">I'm Glenn and I'm a <span class="typing-2"></span></div>
+                        <div class="text" id="about-text">I'm Glenn and I'm a <span class="typing-2"></span></div>
                         <p id="description">
                             I am currently a 3rd Year Computer Science Student stuyding at Technological Univerisity of the Philippines, and
                             I am an aspiring Full Stack Developer with a passion for creating beautiful and functional or systems.
@@ -82,9 +82,216 @@
                         <br>
                         &rarr; <q>Excuses are meaningless. The tougher things get, the more likely people are to come to their own conclusions.</q>
                         </p>
-                        <a href="./Files/GALBADORES-CV.pdf" download>Download CV</a>
-                        <button type="button" onclick=onClickButton() id="game">Game Persona</button>
+                        <a href="./Files/GALBADORES-CV.pdf" download id="cv">Download CV</a>
+                        <button type="button" onclick=onClickButton() id="game">Online Persona</button>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAVORITES -->
+        <section class="favorite-artists" id="favorite-artists" style="display: none;">
+            <div class="max-width">
+                <h2 class="title">Favorites</h2>
+                <h3 class="sub-title">Music Artists</h3>
+                <div class="artists-content">
+                    <div class="artist">
+                        <a href="https://open.spotify.com/artist/5y8tKLUfMvliMe8IKamR32" target="_blank">
+                        <img src="./images/music-artists/d4vd.png" alt="Artist 1">
+                        <div class="artist-name">D4vd</div>
+                        </a>
+                    </div>
+                    <div class="artist">
+                        <a href="https://open.spotify.com/artist/3MZsBdqDrRTJihTHQrO6Dq" target="_blank">
+                        <img src="./images/music-artists/joji.png" alt="Artist 2">
+                        <div class="artist-name">Joji</div>
+                    </a>
+                    </div>
+                    <div class="artist">
+                        <a href="https://open.spotify.com/artist/0du5cEVh5yTK9QJze8zA0C" target="_blank">
+                        <img src="./images/music-artists/bruno-mars.png" alt="Artist 3">
+                        <div class="artist-name">Bruno Mars</div>
+                    </a>
+                    </div>
+                    <div class="artist">
+                        <a href="https://open.spotify.com/artist/3PDFGpPl4ienSn5Vwisfrh" target="_blank">
+                        <img src="./images/music-artists/flow-g.png" alt="Artist 4">
+                        <div class="artist-name">Flow G</div>
+                    </a>
+                    </div>
+                    <div class="artist">
+                        <a href="https://open.spotify.com/artist/7dGJo4pcD2V6oG8kP0tJRR" target="_blank">
+                        <img src="./images/music-artists/eminem.png" alt="Artist 5">
+                        <div class="artist-name">Eminem</div>
+                    </a>
+                    </div>
+                    <div class="artist">
+                        <a href="https://open.spotify.com/artist/1Xyo4u8uXC1ZmMpatF05PJ" target="_blank">
+                        <img src="./images/music-artists/the-weeknd.png" alt="Artist 6">
+                        <div class="artist-name">The Weeknd</div>
+                    </a>
+                    </div>
+                    <div class="artist">
+                        <a href="https://open.spotify.com/artist/64tJ2EAv1R6UaZqc4iOCyj" target="_blank">
+                        <img src="./images/music-artists/yoasobi.png" alt="Artist 7">
+                        <div class="artist-name">Yoasobi</div>
+                    </a>
+                    </div>
+                    <div class="artist">
+                        <a href="https://open.spotify.com/artist/2QOIawHpSlOwXDvSqQ9YJR" target="_blank">
+                        <img src="./images/music-artists/antonio-vivaldi.png" alt="Artist 7">
+                        <div class="artist-name">Antonio Vivaldi</div>
+                    </a>
+                    </div>
+                    <div class="artist">
+                        <a href="https://open.spotify.com/artist/246dkjvS1zLTtiykXe5h60" target="_blank">
+                        <img src="./images/music-artists/post-malone.png" alt="Artist 8">
+                        <div class="artist-name">Post Malone</div>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAVORITE ANIMES -->
+        <section class="favorite-animes" id="favorite-animes" style="display: none;">
+            <div class="max-width">
+                <h2 class="title">Animes</h2>
+                <div class="animes-content">
+                    <div class="anime">
+                        <iframe width="250" height="140" src="https://www.youtube.com/embed/eMreDxiBNNI" frameborder="0" allowfullscreen></iframe>
+                        <p class="anime-title">86</p>
+                    </div>
+                    <div class="anime">
+                        <iframe width="250" height="140" src="https://www.youtube.com/embed/13nSISwxrY4" frameborder="0" allowfullscreen></iframe>
+                        <p class="anime-title">Evangelion</p>
+                    </div>
+                    <div class="anime">
+                        <iframe width="250" height="140" src="https://www.youtube.com/embed/D56yOCZHOkc" frameborder="0" allowfullscreen></iframe>
+                        <p class="anime-title">Major</p>
+                    </div>
+                    <div class="anime">
+                        <iframe width="250" height="140" src="https://www.youtube.com/embed/oXkkMhCuCMg" frameborder="0" allowfullscreen></iframe>
+                        <p class="anime-title">Tengen Toppa Gurren Lagann</p>
+                    </div>
+                    <div class="anime">
+                        <iframe width="250" height="140" src="https://www.youtube.com/embed/PugZi9QKL64" frameborder="0" allowfullscreen></iframe>
+                        <p class="anime-title">Monogatari Series</p>
+                    </div>
+                    <div class="anime">
+                        <iframe width="250" height="140" src="https://www.youtube.com/embed/Azs6jA8vRH8" frameborder="0" allowfullscreen></iframe>
+                        <p class="anime-title">Relife</p>
+                    </div>
+                    <div class="anime">
+                        <iframe width="250" height="140" src="https://www.youtube.com/embed/iTNHwd7cVII" frameborder="0" allowfullscreen></iframe>
+                        <p class="anime-title">Saenai Heroine no Sodatekata</p>
+                    </div>
+                    <div class="anime">
+                        <iframe width="250" height="140" src="https://www.youtube.com/embed/ZJgpUwZ9deg" frameborder="0" allowfullscreen></iframe>
+                        <p class="anime-title">Ballroom e Youkoso</p>
+                    </div>
+                    <div class="anime">
+                        <iframe width="250" height="140" src="https://www.youtube.com/embed/5v2YYUbgbAg" frameborder="0" allowfullscreen></iframe>
+                        <p class="anime-title">Grand Blue</p>
+                    </div>
+                    <div class="anime">
+                        <iframe width="250" height="140" src="https://www.youtube.com/embed/YFcFBxZHZHU" frameborder="0" allowfullscreen></iframe>
+                        <p class="anime-title">Kingdom</p>
+                    </div>
+                    <div class="anime">
+                        <iframe width="250" height="140" src="https://www.youtube.com/embed/S51PKANf92c" frameborder="0" allowfullscreen></iframe>
+                        <p class="anime-title">High Score Girl/p>
+                    </div>
+                    <div class="anime">
+                        <iframe width="250" height="140" src="https://www.youtube.com/embed/jSCKo90DMK4" frameborder="0" allowfullscreen></iframe>
+                        <p class="anime-title">Mushoku Tensei</p>
+                    </div>
+                    <div class="anime">
+                        <iframe width="250" height="140" src="https://www.youtube.com/embed/KVqmEV3evbc" frameborder="0" allowfullscreen></iframe>
+                        <p class="anime-title">Code Geass</p>
+                    </div>
+                    <div class="anime">
+                        <iframe width="250" height="140" src="https://www.youtube.com/embed/3lfb_KeqdEM" frameborder="0" allowfullscreen></iframe>
+                        <p class="anime-title">Kusuriya no Hitorigoto</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="manga-light-novels" id="manga-light-novels" style="display: none;">
+            <h2 class="title">Manga, Manhua & Light Novels</h2>
+            <div class="manga-container">
+                <div class="manga-box">
+                    <img src="./images/book-covers/TBATE.webp" alt="Cover of Title 1" class="manga-image">
+                    <h3 class="manga-title">The Beginning after the End</h3><br>
+                    <p class="author">TurtleMe</p><br>
+                    <p>The Beginning After The End follows the life of the late King Grey after his untimely and mysterious death. Reborn as Arthur Leywin, he seeks to correct his past mistakes in the vibrant new continent of Dicathen, a world of magic and fantastical creatures.</p>
+                </div>
+                <div class="manga-box">
+                    <img src="./images/book-covers/COTE.webp" alt="Cover of Title 2" class="manga-image">
+                    <h3 class="manga-title">Classroom of the Elite</h3><br>
+                    <p class="author">Syougo Kinugasa</p><br>
+                    <p>The students are given a high degree of freedom in order to closely mimic real life. The story follows the perspective of Kiyotaka Ayanokōji, a quiet and modest boy, who is bad at making friends and would rather keep his distance, but possesses unrivaled intelligence and incredible physical ability.</p>
+                </div>
+                <div class="manga-box">
+                    <img src="./images/book-covers/OOTCDH.webp" alt="Cover of Title 2" class="manga-image">
+                    <h3 class="manga-title">Ori of the Dragon Chain</h3><br>
+                    <p class="author">cadet</p><br>
+                    <p>Solminati Academy is a gathering place for youths with dreams, hopes, ambitions, and a variety of other thoughts and feelings. There was a boy who entered the school to support his girlfriend's dream. However, his abilities did not grow, he was ridiculed by those around him, he lost his friends, his girlfriend left him, and his progress came to a halt. But then he encountered an old woman, and this encounter became the catalyst for a gradual change in the boy. This is the story of a boy whose spirit has stopped moving forward.</p>
+                </div>
+                <div class="manga-box">
+                    <img src="./images/book-covers/BOTFM.webp" alt="Cover of Title 2" class="manga-image">
+                    <h3 class="manga-title">Breakthrough of the Forbidden Master</h3><br>
+                    <p class="author">Brother Aneki</p><br>
+                    <p>The hero's son and the ghost of the Demon King are the master and pupil!? Eirth, the son of the hero who defeated the Great Demon King, is troubled. Always expected to achieve great things, but unable to meet those expectations. No matter the effort he puts in, and the results he obtains, it's never enough for them.</p>
+                </div>
+                <div class="manga-box">
+                    <img src="./images/book-covers/roshidere.jpg" alt="Cover of Title 2" class="manga-image">
+                    <h3 class="manga-title">Roshidere</h3><br>
+                    <p class="author">Sansan Sun, Tenamachi Saho</p><br>
+                    <p>My Deskmate Alya Sometimes Hides Her Feelings in Russian , Tokidoki Bosotto Roshia-go de Dereru Tonari no rya-san , Masachika Kuse sits next to Alya, a girl of Russian and Japanese descent. She's beautiful, haughty, and an exceptional student, while Masachika is nerdy and known for being a slacker. He's an easy target for her comments in Russian, which she's all too happy to translateexcept he can understand what she's really saying!</p>
+                </div>
+                <div class="manga-box">
+                    <img src="./images/book-covers/dna.jpg" alt="Cover of Title 2" class="manga-image">
+                    <h3 class="manga-title">Diamond no Ace</h3><br>
+                    <p class="author">Terajima Yuuji</p><br>
+                    <p>The main character, who is a pitcher from a country high school, accidentally gets teamed up with a catcher from a school with an elite baseball team. He decides to quit his school to attend the school that this catcher plays... Winner of the 53rd Annual Shogakukan Manga award (2008) and the 34th Annual Kodansha Manga Award for the Shounen category.</p>
+                </div>
+                <div class="manga-box">
+                    <img src="./images/book-covers/TANDSMR.jpg" alt="Cover of Title 2" class="manga-image">
+                    <h3 class="manga-title">Otonari no Tenshi-sama ni Itsu no Ma ni ka Dame Ningen ni Sareteita Ken</h3><br>
+                    <p class="author">Saekisan</p><br>
+                    <p>Amane Fujimiya, a lonely and stoic high school boy, lives alone in an apartment, and the most beautiful girl in school, Mahiru Shiina, lives just next door, to which they are initially unaware of. They have almost never spoken despite being in the same class—until the day he sees her in distress on a rainy day and lends her his umbrella. To return the favor, she offers him help around the house, and before they realize, a relationship slowly begins to blossom as the distance between them closes.</p>
+                </div>
+                <div class="manga-box">
+                    <img src="./images/book-covers/MT.jpg" alt="Cover of Title 2" class="manga-image">
+                    <h3 class="manga-title">Mushoku Tensei</h3><br>
+                    <p class="author">Rifujin na Magonote</p><br>
+                    <p>A 34-year-old underachiever gets run over by a bus, but his story isn't over. Reincarnated as an infant, he'll embark on an epic adventure. A 34-year-old underachiever gets run over by a bus, but his story isn't over.</p>
+                </div>
+                <div class="manga-box">
+                    <img src="./images/book-covers/WCNKL.jpg" alt="Cover of Title 2" class="manga-image">
+                    <h3 class="manga-title">Webtoon Character Na Kang Lim</h3><br>
+                    <p class="author">Lee Kyung-Min, Song Joonhyuk</p><br>
+                    <p>Na Kang-Lim, a high school student who usually enjoys webtoons. One day, experiences something bizzare, a female protagonist from a webtoon he usually reads appeared before him. The incidents in the webtoon puts her into a crisis, but the problem is there's no protagonist to save her from those events! He then becomes the protagonist and goes over time to save her.</p>
+                </div>
+                <div class="manga-box">
+                    <img src="./images/book-covers/ARMSBS.jpg" alt="Cover of Title 2" class="manga-image">
+                    <h3 class="manga-title">A Returner's Magic Should Be Special</h3><br>
+                    <p class="author">Usonan</p><br>
+                    <p>The Shadow Labyrinth - the deadliest catastrophe humanity has ever known. Desir Arman, one of the six remaining survivors of mankind, is inside the Labyrinth. The six of them attempt to clear the final level of the Labyrinth but ultimately fail, and the world comes to an end. However, when Desir thought he would meet his demise, what appears before him is the world… thirteen years ago?! Desir is returned to the past, back to the time when he enrolled at the nation's finest magic academy, Havrion. He is reunited with his precious friends, and he is determined to change the past to save the world and his loved ones…!</p>
+                </div>
+                <div class="manga-box">
+                    <img src="./images/book-covers/RC.webp" alt="Cover of Title 2" class="manga-image">
+                    <h3 class="manga-title">Ran-Chat</h3><br>
+                    <p class="author">Park Eunhyuk</p><br>
+                    <p>Joonwoo hates school and has trouble making friends. The only time he's happy is when he's talking to strangers on the Random Chatting phone app. That's how Joonwoo ends up befriending a girl on RanChat who turns out to be his classmate Sungah but she has no idea about it! Will Joonwoo be able to fight his social anxiety and become closer to her in real life?</p>
+                </div>
+                <div class="manga-box">
+                    <img src="./images/book-covers/WB.jpg" alt="Cover of Title 2" class="manga-image">
+                    <h3 class="manga-title">Wind Breaker</h3><br>
+                    <p class="author">Yongseok Jo</p><br>
+                    <p>Jay's the perfect student. He's got straight As and he's the student body president. But after being coerced into joining the school's biking team, the Hummingbird Crew, he discovers a whole new world outside of studying. What new adventures will he face outside the comfort of his textbooks?</p>
                 </div>
             </div>
         </section>
@@ -211,56 +418,56 @@
                 <div class="carousel owl-carousel">
                     <div class="card">
                         <div class="box">
-                            <img src="images/Logo-1.png" alt="Project1">
+                            <img src="./images/Logo-1.png" alt="Project1">
                             <div class="text">Ani-Games</div>
                             <p>OOP & Database Minigame System on Roblox</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="box">
-                            <img src="images/Logo-2.png" alt="Project2">
+                            <img src="./images/Logo-2.png" alt="Project2">
                             <div class="text">Gate</div>
                             <p>Tower Defense with Database management System on Roblox</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="box">
-                            <img src="images/Logo-3.png" alt="Project3">
+                            <img src="./images/Logo-3.png" alt="Project3">
                             <div class="text">Radix Sort Algorithm Visualizer</div>
                             <p>Radix Sort Algorithm Visualization system on Roblox</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="box">
-                            <img src="images/Logo-4.png" alt="Project4">
+                            <img src="./images/Logo-4.png" alt="Project4">
                             <div class="text">Classic Minigames</div>
                             <p>Brute Force Minigame System on Roblox</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="box">
-                            <img src="images/Logo-5.png" alt="Project5">
+                            <img src="./images/Logo-5.png" alt="Project5">
                             <div class="text">C++ Text Compression</div>
                             <p>Huffman and RLE Text Compression in C++</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="box">
-                            <img src="images/Logo-6.png" alt="Project6">
+                            <img src="./images/Logo-6.png" alt="Project6">
                             <div class="text">Trafit</div>
                             <p>Mobile Fitness App using Thunkable without any functionalities</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="box">
-                            <img src="images/Logo-7.png" alt="Project7">
+                            <img src="./images/Logo-7.png" alt="Project7">
                             <div class="text">PH Mango Classficator AI</div>
                             <p>Fresh or Rotten & Classfication of PH Mango using YOLO's Object Detection</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="box">
-                            <img src="images/Logo-8.png" alt="Project8">
+                            <img src="./images/Logo-8.png" alt="Project8">
                             <div class="text">C++ ATM System</div>
                             <p>C++ ATM System with real-time Account Management</p>
                         </div>
@@ -333,7 +540,7 @@
             <span>| 2024 All rights reserved. |</span>
         </footer>
     </body>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
     <script>
         window.addEventListener('load', () => {
             document.body.classList.add('fade-in');

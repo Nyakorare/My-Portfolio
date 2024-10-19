@@ -35,13 +35,13 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Author", "Developer", "Gamer", "Athlete"],
+        strings: ["Author", "Developer", "Gamer", "Athlete", "Bookworm", "Music Lover"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
-    var typed = new Typed(".typing-2", {
+    var typed2 = new Typed(".typing-2", {
         strings: ["Author", "Developer", "Gamer", "Athlete"],
         typeSpeed: 100,
         backSpeed: 60,
@@ -74,18 +74,46 @@ $(document).ready(function(){
 
 let isOriginal = true;
 function onClickButton() {
+    const downloadCVBtn = document.getElementById("cv");
+    const animeSection = document.getElementById("favorite-animes");
+    const favoriteArtistsSection = document.getElementById("favorite-artists");
+    const mangaAndLNSection = document.getElementById("manga-light-novels");
+
+    if (favoriteArtistsSection.style.display === "none") {
+        favoriteArtistsSection.style.display = "block";
+        animeSection.style.display = "block";
+        mangaAndLNSection.style.display = "block";
+    } else {
+        favoriteArtistsSection.style.display = "none";
+        animeSection.style.display = "none";
+        mangaAndLNSection.style.display = "none";
+    }
+
     if (isOriginal) {
+        downloadCVBtn.style.display = 'none';
         document.getElementById("about-profile").src = "./images/Game-Profile.jpg";
+        document.getElementById("about-text").innerHTML = "I'm Nyakorare and I'm a <span class='typing-2'></span>";
         document.getElementById("description").innerHTML = `
-            I also go by Nyakorare as my In-Game name and I play lots of games, particularly on the genre of Cozy, Tower Defense, and Story-Driven Singleplayers.
+            I love to play lots of games, particularly on the genre of Cozy, Tower Defense, and Story-Driven Singleplayers.
             <br><br>
             I'm an active Co-op guy who likes to goof around with friends in different types of games, more particularly on the genre of Horror, RPGs, and Survival.
             <br><br>
-            I also play Online Shooters (mostly Valorant), and I love to trash talk lots of people(even teammates) when it comes to these type of games.
-            `;
-        document.getElementById("game").innerHTML = "Game Persona";
+            I also play Online Shooters (mostly Valorant), and I love to trash talk lots of people (even teammates) when it comes to these type of games.
+        `;
+        document.getElementById("game").innerHTML = "Real Persona";
+        
+        // Change strings for online persona
+        new Typed(".typing-2", {
+            strings: ["Gamer", "Bookworm", "Music Lover"],
+            typeSpeed: 100,
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true
+        });
     } else {
+        downloadCVBtn.style.display = 'block';
         document.getElementById("about-profile").src = "./images/profile-1.jpg";
+        document.getElementById("about-text").innerHTML = "I'm Glenn and I'm a <span class='typing-2'></span>";
         document.getElementById("description").innerHTML = `
             I am currently a 3rd Year Computer Science Student studying at Technological University of the Philippines, and
             I am an aspiring Full Stack Developer with a passion for creating beautiful and functional systems.
@@ -105,7 +133,17 @@ function onClickButton() {
             <br>
             &rarr; <q>Excuses are meaningless. The tougher things get, the more likely people are to come to their own conclusions.</q>
         `;
-        document.getElementById("game").innerHTML = "Real Persona";
-    }
+        document.getElementById("game").innerHTML = "Online Persona";
+
+        // Change strings for real persona
+        new Typed(".typing-2", {
+            strings: ["Author", "Developer", "Athlete"],
+            typeSpeed: 100,
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true
+        });
+    }    
+
     isOriginal = !isOriginal;
 }

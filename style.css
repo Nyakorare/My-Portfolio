@@ -163,7 +163,7 @@ section .title::after{
 /* HOME */
 .home{
     display: flex;
-    background: url("images/banner.gif") no-repeat center;
+    background: url("./images/banner.gif") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -250,7 +250,7 @@ section .title::after{
     text-align: justify;
 }
 .about .about-content .right a{
-    display: inline-block;
+    display: block;
     background: limegreen;
     color: #fff;
     font-size: 20px;
@@ -295,6 +295,205 @@ section .title::after{
     color: white;
     background: black;
     cursor: progress;
+}
+
+/* FAVORITES */
+.favorite-artists {
+    padding: 50px 0;
+    background: #222; /* Dark background for contrast */
+    color: white;
+}
+
+.favorite-artists .title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 76px; /* Increased font size */
+    font-weight: 700; /* Make it bolder */
+}
+
+.favorite-artists .sub-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px; /* Increased font size */
+    font-weight: 700; /* Make it bolder */
+    color: limegreen; /* Title color */
+}
+
+.artists-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Wraps artists in smaller screens */
+    padding: 0 20px; /* Add some padding */
+}
+
+.artist {
+    margin: 20px; /* Increased margin for better spacing */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    border-radius: 8px; /* Slightly more rounded corners */
+    overflow: hidden; /* Prevents overflow of child elements */
+    background: #333; /* Slightly lighter background for each artist */
+    padding: 10px; /* Add some padding */
+    width: 180px; /* Fixed width for consistency */
+}
+
+.artist:hover {
+    transform: scale(1.1); /* Scale up on hover */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Enhanced shadow effect */
+}
+
+.artist img {
+    width: 100%; /* Make image fill the container */
+    height: 20vh; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular images */
+    object-fit: cover; /* Covers the area nicely */
+    transition: transform 0.3s ease; /* Smooth transition for image */
+}
+
+.artist:hover img {
+    transform: scale(1.05); /* Slight zoom effect on image hover */
+}
+
+.artist-name {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px; /* Increased font size for names */
+    color: white; /* Add color to artist names */
+}
+
+/* FAVORITE ANIMES */
+.favorite-animes {
+    padding: 50px 0;
+    background: #222; /* Background color for the animes section */
+}
+
+.favorite-animes .title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px; /* Increased font size */
+    font-weight: 700; /* Make it bolder */
+    color: limegreen; /* Title color */
+}
+
+.animes-content {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    padding: 20px;
+    gap: 20px; /* Space between animes */
+    scroll-behavior: smooth;
+}
+
+.animes-content::-webkit-scrollbar {
+    height: 8px; /* Set the height of the scrollbar */
+}
+
+.animes-content::-webkit-scrollbar-thumb {
+    background-color: limegreen; /* Custom scrollbar color */
+    border-radius: 10px; /* Rounded scrollbar */
+}
+
+.anime {
+    flex: 0 0 auto; /* Prevents flex items from shrinking */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+    background: #333; /* Dark background for anime cards */
+    border-radius: 8px; /* Slightly more rounded corners */
+    padding: 10px; /* Add some padding */
+}
+
+.anime:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */
+}
+
+.anime img {
+    width: 100px; /* Fixed width for images */
+    height: 150px; /* Fixed height for images */
+    object-fit: cover; /* Covers the area nicely */
+    border-radius: 6px; /* Slightly rounded corners */
+}
+
+.anime-title {
+    margin-top: 10px;
+    color: white; /* Color for anime titles */
+    font-weight: bold;
+    font-size: 18px; /* Increased font size for titles */
+}
+
+/* MANGA AND LIGHT NOVELS */
+.manga-container {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    gap: 20px;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+.manga-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.manga-container::-webkit-scrollbar-thumb {
+    background-color: limegreen;
+    border-radius: 10px;
+}
+
+.manga-light-novels {
+    background: #222; /* Dark background for contrast */
+}
+
+.manga-light-novels .title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px; /* Increased font size */
+    font-weight: 700; /* Make it bolder */
+    color: limegreen; /* Title color */
+}
+
+.manga-box {
+    flex: 0 0 auto;
+    width: 200px;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 8px;
+    background-color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.manga-box p{
+    color: white;
+    text-align: justify;
+}
+
+.manga-box .author{
+    font-style: italic;
+    text-align: center;
+}
+
+.manga-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.manga-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.manga-box:hover .manga-image {
+    transform: scale(1.05);
+}
+
+.manga-title {
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
 }
 
 /* SERVICES */
@@ -599,7 +798,7 @@ transition: all 0.3s ease;
     cursor: progress;
 }
 
-/* footer section styling */
+/* FOOTER */
 footer{
     background: #111;
     padding: 15px 23px;
