@@ -573,7 +573,7 @@ section .title::after{
     border: 2px solid black;
     transition: all 0.3s ease;
 }
-#github-img, #tapas-img, #roblox-img{
+#github-img, #tapas-img, #roblox-img, #honeyfeed-img{
     width: 75px;
     height: auto;
 }
